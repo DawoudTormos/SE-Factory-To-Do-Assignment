@@ -1,3 +1,9 @@
+<!--
+author : Dawoud Tormos
+To-Do Assignment 
+--->
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
 
@@ -23,74 +29,136 @@
 
 
 
-<div class="card">
-    <div class="card-content">
-        <div class="card-flex-row"> 
-            <div class="card-header taskContent">Another Task</div><Button class="header-child button buttonSuccess" type="checkbox" >Finish</Button>
-            </div>
 
 
-        <div class="card-flex-row"> 
-            <div class="card-detail"><strong>Person:</strong> Ali</div>
-            <div class="card-detail"><strong>Due Date:</strong> July 15, 2024</div>
+
+
+    <div class="card">
+        <div class="card-content">
+            <div class="header-flex-row"> 
+                <div class="card-header taskContent">Another Task</div><Button class="header-child button buttonGrey" type="checkbox" >Finish</Button>
+                </div>
+    
+    
+    
+            <div class="card-flex-row"> 
+                <div class="card-detail"><strong>Assigned to:</strong> Jane Smith</div>
+                <div class="card-detail"><strong>Due Date:</strong> July 15, 2024</div>
+                <div class="card-detail"><strong>Status:</strong> <span class="status complete">Complete</span></div>
             </div>
-        <div class="card-flex-row"> 
-            <div class="card-detail"><strong>Status:</strong> <span class="status pending">Pending</span></div>
-            <div class="card-detail"><strong>Assigned to:</strong> Jane Smith</div>
         </div>
     </div>
-</div>
+    
+    
+    
 
 
 
-<div class="card">
-    <div class="card-content">
-        <div class="card-flex-row"> 
-            <div class="card-header taskContent">Another Task</div><Button class="header-child button buttonSuccess" type="checkbox" >Finish</Button>
+
+    <div class="card">
+        <div class="card-content">
+            <div class="header-flex-row"> 
+                <div class="card-header taskContent">Another Task</div><Button class="header-child button buttonGrey" type="checkbox" >Finish</Button>
+                </div>
+    
+    
+    
+            <div class="card-flex-row"> 
+                <div class="card-detail"><strong>Assigned to:</strong> Jane Smith</div>
+                <div class="card-detail"><strong>Due Date:</strong> July 15, 2024</div>
+                <div class="card-detail"><strong>Status:</strong> <span class="status pending">Pending</span></div>
             </div>
-
-
-        <div class="card-flex-row"> 
-            <div class="card-detail"><strong>Person:</strong> Ali</div>
-            <div class="card-detail"><strong>Due Date:</strong> July 15, 2024</div>
-            </div>
-        <div class="card-flex-row"> 
-            <div class="card-detail"><strong>Status:</strong> <span class="status complete">Complete</span></div>
-            <div class="card-detail"><strong>Assigned to:</strong> Jane Smith</div>
         </div>
     </div>
-</div>
+    
+    
+    
 
 
 
 
-
-
-
-<div class="card">
-    <div class="card-content">
-        <div class="card-flex-row"> 
-            <div class="card-header taskContent">Another Task</div><Button class="header-child button buttonSuccess" type="checkbox" >Finish</Button>
+    <div class="card card-pastDue">
+        <div class="card-content">
+            <div class="header-flex-row"> 
+                <div class="card-header taskContent">Another Task</div><Button class="header-child button buttonGrey" type="checkbox" >Finish</Button>
+                </div>
+    
+    
+    
+            <div class="card-flex-row"> 
+                <div class="card-detail"><strong>Assigned to:</strong> Jane Smith</div>
+                <div class="card-detail"><strong>Due Date:</strong> July 15, 2024</div>
+                <div class="card-detail"><strong>Status:</strong> <span class="status past-due">Past Due</span></div>
             </div>
-
-
-        <div class="card-flex-row"> 
-            <div class="card-detail"><strong>Person:</strong> Ali</div>
-            <div class="card-detail"><strong>Due Date:</strong> July 15, 2024</div>
-            </div>
-        <div class="card-flex-row"> 
-            <div class="card-detail"><strong>Status:</strong> <span class="status past-due">Past Due</span></div>
-            <div class="card-detail"><strong>Assigned to:</strong> Jane Smith</div>
         </div>
     </div>
+    
+    
+    
+            
+
+
+
+
+
+
+
+
 </div>
 
 
+<button id="Btn-addTask" class="button buttonPrimary"> Add Task</button>
+
+<div id="cotainer">
+
+    
+
+
+    <div id="modal-addTask" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content card">
+            <div id="modal-header">
+                <h1>Add Task</h1>
+                <div id="closeModalTask" class="close"></div>
+            </div>
+
+            <label>Content:</label>
+            <div class="">
+                <textarea type="text" id="task"></textarea>
+            </div>
+     
+
+            <div class="modal-flex">
+                <div>
+            <label >Choose Due Date:</label>
+            <input id="dueDate" type="datetime-local" style="margin-bottom:35px;display:block;"">
+            </div>
+            <div >
+
+                <label for="menu"  >Select a user:</label>
+                <select id="UsersMenu" name="menu">
+                  <option value="Option 1">Option 1</option>
+                  <option value="Option 2">Option 2</option>
+                  <option value="Option 3">Option 3</option>
+                </select>
+
+                
+            </div>
+        </div>
+
+
+                <button class="button buttonPrimary" style=" font-size:16px:">Add</button>
+
+
+        </div>
+      
+      </div>
 
 
 
 </div>
 
+    <script src="./script.js"></script>
 
 
 </body>
