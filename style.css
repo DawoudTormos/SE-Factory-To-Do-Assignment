@@ -1,0 +1,150 @@
+#container1{
+    display:flex;
+    flex-flow: row nowrap;
+    width:100%;
+    justify-content:center;
+    
+    
+}
+
+
+#MainList{
+    display:flex;
+    flex-flow: column nowrap;
+    gap:20px;
+
+
+}
+
+.listItem{
+    width:400px;
+    flex-basis:70px;
+    background-color: antiquewhite;
+    border-radius: 5% ;
+}
+
+
+
+
+
+
+
+body{
+        background-color: #f4f4f9;
+
+}
+
+
+#container2 {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-flow:column nowrap;
+    justify-content: center;
+    align-items: center;
+    /*height: 100vh;*/
+    margin: 0;
+}
+
+
+
+    
+        .card {
+            display: flex;
+            flex-direction: row;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            width: 600px;
+            padding: 20px 25px;
+            margin: 10px;
+            color:grey;
+        }
+
+
+                .card-content {
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                }
+                .card-header {
+                    font-size: 1.5em;
+                    margin-bottom: 0;
+                    color:#333;
+
+                }
+
+
+                
+
+
+                .taskContent{
+                    margin : 2x 0 ; 
+                    font-size: 1.1em;
+                    color:#444;
+
+                }
+
+                .card-flex-row {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content:space-between;
+                    align-items: center ;
+                    margin: 8px 0  0px 0;
+                    width:100%;
+                }
+
+                .header-child{
+
+                }
+
+                    .card-detail {
+                        margin-bottom: 5px;
+                        flex-basis:50%;
+                    }
+
+                    .status {
+                        font-weight: bold;
+                    }
+                    .complete {
+                        color: green;
+                    }
+                    .pending {
+                        color: orange;
+                    }
+                    .past-due {
+                        color: red;
+                    }
+
+
+
+
+
+
+
+
+                    .button {
+                        background-color: #04AA6D; /* Green */
+                        border: none;
+                        color: white;
+                        padding: 8px 16px;
+                        text-align: center;
+                        text-decoration: none;
+                        display: inline-block;
+                        font-size: 16px;
+                        margin: 4px 2px;
+                        transition-duration: 0.4s;
+                        cursor: pointer;
+                      }
+                      
+                      .buttonSuccess {
+                        background-color: white; 
+                        color: black; 
+                        border: 2px solid #555555;
+                      }
+                      
+                      .buttonSuccess:hover {
+                        background-color: #555555;
+                        color: white;
+                      }
