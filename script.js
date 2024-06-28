@@ -233,7 +233,7 @@ let jsonTasks = JSON.stringify(tasks);
 
                 temp += status1 +`<div class="card-content">
             <div class="header-flex-row"> 
-                <div class="card-header taskContent">`+item[0]+`</div><Button class="header-child button buttonGrey" type="checkbox" onclick = "toggleTaskstatusForm(`+index+`)">Finish</Button>
+                <div class="card-header taskContent">`+item[0]+`</div><Button class="header-child button buttonGrey" type="checkbox" onclick = "toggleTaskstatusForm(`+index+`)">Toggle</Button>
                 </div>
     
     
