@@ -169,7 +169,7 @@ body{
                         color: green;
                     }
                     .pending {
-                        color: orange;
+                        color: rgb(255, 165, 0);
                     }
                     .past-due {
                         color: red;
@@ -397,7 +397,7 @@ select {
   }
 
   #usersContainer{
-    margin-top: 40px;
+    margin-top: 60px;
   }
 
 
@@ -424,6 +424,10 @@ width:550px;
 }
 
 
+#usersContainer > div > input[type="text"]{
+  width:40vw;
+}
+
 }
 
 
@@ -445,6 +449,9 @@ width:550px;
 
 html{
   font-size: 14px;
+}
+#usersContainer > div > input[type="text"]{
+  width:50vw;
 }
 }
 
@@ -468,6 +475,7 @@ html{
 html{
   font-size: 14px;
 }
+
 }
 
 
