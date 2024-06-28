@@ -71,8 +71,11 @@ body{
   flex-flow:column nowrap;
   justify-content: flex-start;
   align-items: center;
-  max-height: 95%;
+  height: 95%;
+  min-width: 590px;
   overflow-y: scroll;
+  border: 1px solid #ccc;
+
   /*height: 100vh;*/
   margin: 0;
 }
@@ -359,8 +362,8 @@ margin-right: 20px;
 
 textarea[type="text"] {
   width:100%;
-  	height: 30px;
-  	padding: 18px 8px;
+  	height: 40px;
+  	padding: 8px 8px;
   	font-size: 1.2rem;
   	border: 1px solid gray;
 }

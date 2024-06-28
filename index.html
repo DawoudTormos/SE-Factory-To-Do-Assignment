@@ -211,7 +211,7 @@ To-Do Assignment
               <th>Users</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody id="usersList">
 
             
             <tr>
@@ -272,7 +272,7 @@ To-Do Assignment
 
 <div    id="userdiv2">
     <input id="userInput" type="text"></input>
-    <button id="addUser" class="button buttonPrimary">Add</button>
+    <button id="addUser" class="button buttonPrimary" onclick="addUserForm()">Add</button>
 </div>
 
 
@@ -341,7 +341,7 @@ To-Do Assignment
             <div >
 
                 <label for="menu"  >Select a user:</label>
-                <select id="UsersMenu" name="menu">
+                <select id="usersMenu" name="menu">
                   <option value="Option 1">Option 1</option>
                   <option value="Option 2">Option 2</option>
                   <option value="Option 3">Option 3</option>
@@ -352,7 +352,7 @@ To-Do Assignment
         </div>
 
 
-                <button class="button buttonPrimary" style=" font-size:16px;">Add</button>
+                <button class="button buttonPrimary" style=" font-size:16px;" onclick="addTaskForm()">Add</button>
 
 
         </div>
