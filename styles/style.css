@@ -69,6 +69,7 @@ body{
   border: 1px solid #ccc;
 
   /*height: 100vh;*/
+  width:620px;
   margin: 0;
 }
 
@@ -412,6 +413,7 @@ select {
 
   }
   #container2-inner{
+    width:550px;
 
   }
   #container2-inner .card-flex-row div:first-child{
@@ -441,6 +443,10 @@ width:550px;
 
 
   }
+  #container2-inner{
+    width:480px;
+
+  }
 
 .card{
   width:470px;
@@ -461,9 +467,14 @@ html{
   #container2-inner .card-flex-row div:first-child{
     width:100%;
   }
+
   #container1 {
     width: 420px;
 
+
+  }
+  #container2-inner{
+    width:420px;
 
   }
 
@@ -489,6 +500,10 @@ html{
   #container1 {
     width: 3400px;
 
+
+  }
+  #container2-inner{
+    width:340px;
 
   }
 
