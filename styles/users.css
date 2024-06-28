@@ -1,3 +1,8 @@
+/*
+author : Dawoud Tormos
+To-Do Assignment 
+*/
+
 .tableFixHead {
     overflow-y: auto; 
     height: 200px; 
@@ -83,4 +88,9 @@ font-weight: 500;
         padding: 18px 8px;
         font-size: 1.1rem;
         border: 1px solid gray;
+  }
+
+  
+  .card-complete  div.card-header{
+    text-decoration: line-through;
   }

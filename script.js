@@ -195,7 +195,7 @@ let jsonTasks = JSON.stringify(tasks);
 
                 if(item[3] == 1){
 
-                    status1 = `    <div class="card">`;
+                    status1 = `    <div class="card card-complete">`;
                     status2 = `           <div class="card-detail"><strong>Status:</strong> <span class="status complete">Complete</span></div>
             </div>
         </div>
