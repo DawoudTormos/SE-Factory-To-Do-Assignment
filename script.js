@@ -43,7 +43,7 @@ console.log("Current Date and Time:", currentDate.toISOString());
 
 //LocalStorage
 
-if(localStorage.length == 0){
+if(localStorage.getItem("is_set" ) != 1){
 
 let users = [];
 let jsonUsers = JSON.stringify(users);
@@ -54,7 +54,7 @@ let jsonTasks = JSON.stringify(tasks);
 
     localStorage.setItem("users" , jsonUsers);
     localStorage.setItem("tasks" , jsonTasks);
-    localStorage.setItem("num" , 1);
+    localStorage.setItem("is_set" , 1);
 
 }
 
